@@ -62,6 +62,16 @@ docker compose up -d mysql
 
 ```
 
+- 提交git
+
+```bash
+cd D:\codex\job-projects\spring-petclinic
+git add docs/technology-baseline.md
+git commit -m "docs: add technology baseline"
+```
+
+
+
 ##### **5. 已知限制**
 
 当前还没解决/没验证的点：
