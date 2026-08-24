@@ -17,7 +17,7 @@
 
 - 上游冻结 SHA：`66747e3`
 - 本地基线提交：`d573224`
-- 当前 HEAD：`c83bd69`（Testcontainers 升级）
+- 当前 HEAD：`50b2272`（Testcontainers 升级）
 - 分支计划：`main` + `develop` + `feature/*`（后续 PR 用）
 
 ##### **3. 数据库场景与配置**
@@ -76,7 +76,7 @@ git commit -m "docs: add technology baseline"
 
 当前还没解决/没验证的点：
 
-- Spring Boot 3.5.16 升级**尚未执行**（下一步）
+- Spring Boot 3.5.16 升级**已执行并复测通过**
 - MySQL 应用运行验证已过，但**未配置 GitHub remote / CI**
 - Testcontainers 2.0.2 是本次为兼容 Docker Desktop 新管道协议而升级的，若项目要跟 Boot 3.5.16 再验一次需复测
 - 上游基线含 Postgres 服务，但本次未验证 Postgres 应用运行
