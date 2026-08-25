@@ -11,6 +11,7 @@ services:
       - MYSQL_DATABASE=petclinic
     volumes:
       - "./conf.d:/etc/mysql/conf.d:ro"
+      - "mysql_data:/var/lib/mysql"   # 改成命名卷，而非匿名卷
   postgres:
     image: postgres:18.0
     ports:
@@ -19,3 +20,5 @@ services:
       - POSTGRES_PASSWORD=petclinic
       - POSTGRES_USER=petclinic
       - POSTGRES_DB=petclinic
+volumes:
+  mysql_data:
